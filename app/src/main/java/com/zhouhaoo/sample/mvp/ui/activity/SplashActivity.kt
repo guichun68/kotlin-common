@@ -21,11 +21,12 @@ import android.os.Bundle
 import android.os.Handler
 import com.zhouhaoo.common.base.BaseActivity
 import com.zhouhaoo.sample.R
+import com.zhouhaoo.sample.mvp.presenter.EmptyPrestener
 
 /**
  * Created by zhou on 18/2/9.
  */
-class SplashActivity : BaseActivity() {
+class SplashActivity : BaseActivity<EmptyPrestener>() {
 
     override fun initView(savedInstanceState: Bundle?): Int {
         return R.layout.activity_splash
